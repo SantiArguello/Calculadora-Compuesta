@@ -3,13 +3,13 @@ document.getElementById('interestForm').addEventListener('submit', function(even
   
     const montoInicial = parseFloat(document.getElementById('monto').value);
     const dias = parseInt(document.getElementById('dias').value);
+    const tasaInteres = parseFloat(document.getElementById('tasa').value) / 100; // Tasa seleccionada
   
     if (isNaN(montoInicial) || isNaN(dias)) {
       document.getElementById('resultado').innerText = "Por favor, ingresa valores válidos.";
       return;
     }
   
-    const tasaInteres = 0.016;
     const vecesPorDia = 2;
     const montoFinal = montoInicial * Math.pow((1 + tasaInteres), vecesPorDia * dias);
   
