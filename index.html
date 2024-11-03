@@ -20,16 +20,20 @@
       <input type="number" id="dias" required>
 
       <label for="tasa">Tasa de interés:</label>
-  <select id="tasa" required>
-    <option value="1.4">1.4%</option>
-    <option value="1.6">1.6%</option>
-  </select>
+<select id="tasa" required>
+  <option value="3.6">NewMars 3.6%</option>
+  <option value="4.0">NewMars 4%</option>
+  <option value="3.2">Yanki 3.2% aprox</option>
+</select>
       
 
       <button type="submit">Calcular</button>
     </form>
 
-    <div id="resultado"></div>
+    <div id="resultado" class="resultado-container" style="display: none;">
+      <p><strong>Beneficio:</strong> $<span id="beneficio"></span></p>
+      <p><strong>Monto final:</strong> $<span id="montoFinal"></span></p>
+    </div>
   </div>
 
   <script src="script.js"></script>

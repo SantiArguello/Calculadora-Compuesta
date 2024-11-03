@@ -50,13 +50,24 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 button:hover {
   background-color: #6b2188;
 }
 
-#resultado {
+.resultado-container {
   margin-top: 1.5rem;
-  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: left;
+  max-width: 250px;
+  margin: auto;
+}
+.resultado-container p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
